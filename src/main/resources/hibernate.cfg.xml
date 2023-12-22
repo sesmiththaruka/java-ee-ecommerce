@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">-->
+    <hibernate-configuration>
+
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/refresh_db?useSSL=false&amp;allowPublicKeyRetrieval=true</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">Sesmith@2845</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <mapping class="lk.verdana.ecom.entity.User"/>
+        <mapping class="lk.verdana.ecom.entity.Category"/>
+        <mapping class="lk.verdana.ecom.entity.Product"/>
+
+    </session-factory>
+</hibernate-configuration>
